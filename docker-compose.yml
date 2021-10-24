@@ -34,7 +34,7 @@ services:
          COUNTRY: U.S.A
  
 ######################################################
-       postgres:
+  postgres:
           image: postgres
           container_name: postgres
           depends_on:
