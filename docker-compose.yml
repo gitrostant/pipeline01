@@ -32,3 +32,14 @@ services:
        environment:
          CITY: Kathleen
          COUNTRY: U.S.A
+ 
+######################################################
+       postgres:
+          image: postgres
+          container_name: postgres
+          depends_on:
+             - tomcat
+             - httpd
+          restart: always
+          environment:
+            POSTGRES_PASSWORD: example
