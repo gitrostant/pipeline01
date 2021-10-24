@@ -6,14 +6,14 @@ services:
         - 90
         - 100
         - 8080
-       container_name: tomcat-gender
+       container_name: tomcat
        restart: always
        
        environment:
          CITY: Kathleen
          COUNTRY: U.S.A
        ports: 
-        - 9596:8080
+        - 9595:8080
            
   
       
@@ -25,10 +25,10 @@ services:
        expose:
         - 80
         - 90
-       container_name: httpd-gender
+       container_name: httpd
        restart: always  
        ports:
-        - 8586:80
+        - 8585:80
        environment:
          CITY: Kathleen
          COUNTRY: U.S.A
